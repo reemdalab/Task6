@@ -1694,10 +1694,112 @@ display: none;
 .features .feature-for-mobile:nth-child(3) {
   animation-delay: 0.6s;
 }
-
 }
-
 @media (max-width:834px){
+  .header .menu-toggle
+{
+    display: block;
+}
+.header{
+    position: relative;
+    padding: 14px 16px;
+}
+.header .list{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #F6ECE2;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    z-index: 10000;
+}
+.menu-checkbox:checked .list{
+    display: block;
+}
+.header .list ul{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.visit-button{
+    margin-left: 100px;
+}
+ .first-section{
+    display: flex;
+    flex-wrap: wrap;
+ } 
+ .second-section-cards{
+    display: flex;
+    flex-direction: column;
+    
+ }
+ .second-section-cards .card1,  .second-section-cards .card2,  .second-section-cards .card3{
+    max-width: 100%;
+ }
+ .third-section{
+    display: flex;
+    flex-direction: column;
+ }
+ .third-section-left{
+    justify-content: center;
+ }
+ .tagline{
+    width: 100%;
+    text-align: center;
+ }
+ .discover-button{
+    justify-content: center;
+    display: flex;
+ }
+ .discover-button button{
+    padding: 12px 88px;
+    font-size: 16px;
+    font-weight: 600;
+ }
+ .fourth-section-buttons{
+    justify-content: center;
+ }
+
+.coffee-dispatch , .openning-hours{
+    display: none;
+}
+.fourth-section-background{
+    padding: 64px 105px;
+}
+.fourth-section-background h2{
+    font-size: 28px;
+}
+.fourth-section-background p{
+    text-align: center;
+    font-size: 14px;
+}
+.footer-part2{
+    display: flex;
+    justify-content: center;
+}
+.footer-part2 .footer-part2-links{
+    display: none;
+}
+.footer-part1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.footer-brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.links{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 }
 @media(min-width:834px) and (max-width:1070px){
 }
