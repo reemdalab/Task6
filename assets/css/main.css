@@ -1,0 +1,1617 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+    border-bottom:1px solid rgba(211, 195, 192, 0.3);
+ }
+ .logo
+ {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+ }
+ .logo p{
+    font-family: 'Playfair';
+    font-size: 28px;
+    font-weight: 600;
+    color: #0E0402;
+ }
+ .list ul{
+    display: flex;
+    flex-wrap: wrap; 
+    gap:32px;
+ }
+ .list li{
+    font-size:14px;
+    list-style:none;
+    line-height: 22px;
+}
+.list li a{
+    font-family: 'Plus Jakarta Sans';
+    font-size: 14px;
+    font-weight:500;
+    color: #4F4442;
+}
+.list li a:hover{
+    font-size: 16px;
+    font-weight: 600;
+
+}
+.list li a:active{
+    text-decoration: underline;
+    color: rgba(132, 83, 38, 1);
+    font-weight: 600;
+}
+
+.menu-toggle {
+  font-size: 28px;
+  cursor: pointer;
+  color: #2c1e16;
+  display: none;
+  background: none;
+  border: none;  
+}
+.menu-checkbox{
+    display: none;
+}
+
+.visit-button button{
+    background-color: #2B1B17;
+    border-radius: 12px;
+    color: #FFF8F3;
+    font-size: 14px;
+    font-family: 'Plus Jakarta Sans';
+    padding: 10px 24px;
+    border:1px solid;
+}
+.visit-button button:hover
+{
+    background-color: #FFF8F3;
+    color:#2B1B17 ;
+
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.first-section
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:76px 48px;
+    gap:40px;
+    width: 100%;
+}
+.left-side{
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+    max-width: 560px;
+}
+.badge{
+    width: 201px;
+    background-color: #F6ECE2;
+    border:1px solid rgba(211, 195, 192, 0.6);
+    padding: 6px 14px; 
+    border-radius: 12px;
+    box-sizing:border-box;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.05);
+} 
+.badge span{
+    font-family: 'Plus Jakarta Sans';
+    font-size: 12px;
+    font-weight: 600;
+    color: #845326;
+}   
+.left-side h1{
+    font-family: 'Playfair';
+    font-size: 64px;
+    font-weight: 600;
+    color: rgba(14, 4, 2, 1);
+    line-height: 72px;
+    letter-spacing: -1.28px;
+}
+@keyframes titleSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.left-side h1 {
+    opacity: 0;
+    animation: titleSlideIn 0.7s ease-out forwards;
+}
+.left-side .big-screen-paragraph{
+    font-family: 'Plus Jakarta Sans';
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(79, 68, 66, 1);
+    line-height: 29px;
+    padding-right: 5px;
+}
+.left-side .small-screen-paragraph
+{
+    font-family: 'Plus Jakarta Sans';
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(79, 68, 66, 1);
+    line-height: 29px;
+    padding-right: 5px;
+    display: none;
+}
+@keyframes textSlide {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.left-side .big-screen-paragraph, .left-side .small-screen-paragraph
+{
+    opacity: 0;
+    animation: textSlide 1s ease-out 0.4s forwards;
+}
+.left-side-links{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.menu-button{
+    font-family: 'Plus Jakarta Sans';
+    background-color: rgba(43, 27, 23, 1);
+    border-radius: 4px;
+    color: rgba(255, 248, 243, 1);
+    font-size: 14px;
+    font-family: 'Plus Jakarta Sans';
+    padding: 14px 28px;
+    line-height: 20px;
+    letter-spacing: 0.56px;
+    border:1px solid rgba(43, 27, 23, 1);
+}
+.menu-button:hover{
+    background-color: rgba(255, 248, 243, 1);
+    color: rgba(43, 27, 23, 1);
+    cursor: pointer;
+
+}
+.story-button{
+    border:1px solid rgba(43, 27, 23, 1);
+    color:rgba(43, 27, 23, 1);
+    background-color: rgba(255, 248, 243, 1);
+    font-size: 14px;
+    font-family: 'Plus Jakarta Sans';
+    padding: 14px 28px;
+    line-height: 20px;
+    letter-spacing: 0.56px;
+    border-radius: 4px;
+ }
+.story-button:hover
+{
+    background-color: rgba(43, 27, 23, 1);
+    color:rgba(255, 248, 243, 1) ;
+    cursor: pointer;
+}
+.divider
+{
+    border :none;
+    height: 1px;
+    background-color: #E0E0E0;
+    width: 100%;
+    margin-top: 24px;
+}
+.stats-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: first-start;
+    align-items: center;
+    gap:16px;
+}  
+ .first{
+    padding:4.5px 16px;
+    width: 33%;
+ }
+ .second{
+    border-left:1px solid  #E0E0E0;
+    padding:4.5px 16px;
+    width: 33%;
+
+ }
+ .third{
+    border-left:1px solid  #E0E0E0;
+    padding:4.5px 16px; 
+    width: 33%;
+ }
+ .third div{
+    display: flex;
+    flex-direction: row;
+    justify-content: first-start;
+    align-items: center;
+    gap:4px;
+ }
+  .first h2 , .second h2 , .third h2{
+    font-family: 'Playfair';
+    font-size: 28px;
+    font-weight: 600;
+    color: rgba(14, 4, 2, 1);
+  }
+
+  .first p , .second p , .third p{
+    font-family: 'Plus Jakarta Sans';
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(79, 68, 66, 1);
+ }
+ @keyframes statsBarAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to{
+    opacity: 1;
+    transform: translateY(0);
+    }
+ }
+ .stats-bar .first,
+ .stats-bar .second,
+ .stats-bar .third{
+    opacity: 0;
+    animation: statsBarAnimation 0.6s ease forwards;
+ }
+ .stats-bar .second{
+    animation-delay: 0.2s;
+ }
+ .stats-bar .third{
+    animation-delay: 0.4s;
+ }
+ .right-side
+ {
+    position: relative;
+ }
+ .background-layer{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 105%;
+    height: 105%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background-color: rgba(240, 231, 221, 1);
+    transform: rotate(-2deg);
+    z-index: 1;
+    inset:0;
+    padding: 13px;
+ }
+ .coffee-cup
+ {
+    position: relative;
+    display: block;
+    z-index: 2;
+    padding: 13px;
+    left: 13px;
+    background-color: rgba(255, 248, 243, 1);
+    width:fit-content;
+    margin: 0 auto;
+    border-radius: 12px;
+    top:12px;
+ }
+ .coffee-cup img{
+    display: block; 
+ }
+ .mini-badge{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 20px;
+    left: 45px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    border: 1px solid rgba(211, 195, 192, 0.5);
+    border-radius: 8px;
+    background-color:  rgba(255, 248, 243, 0.95);
+    z-index: 13;
+
+ }
+ .mini-badge-icon{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgba(132, 83, 38, 0.15);
+    border-radius: 4px;
+    padding: 6px 7px;
+ }
+ .mini-badge-text h6
+ {
+    font-family: 'Plus Jakarta Sans';
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(14, 4, 2, 1);
+    line-height: 20px;
+    letter-spacing: .56px;
+ }
+  .mini-badge-text p{
+    font-family: 'Plus Jakarta Sans';
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(79, 68, 66, 1);
+    line-height:22px;
+    letter-spacing: .14px;
+  }
+  .mini-badge:hover{
+    transform:translateY(6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    padding: 20px;
+  }
+ .second-section
+ {
+    background-color: rgba(240, 231, 221, 1);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding: 112px 48px;
+}
+ .second-section-header
+ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:8px;
+ }
+ .second-section-header .title-for-big-screen, 
+  .second-section-header .title-for-small-screen,
+  .second-section-header .text1 , .second-section-header .text2
+ {
+    font-family: 'Plus Jakarta Sans';
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(132, 83, 38, 1);
+    line-height: 16px;
+    letter-spacing: 1.2px;
+    margin-top: 5px;
+}
+ .second-section-header .title-for-small-screen
+ {
+    display: none;
+ }
+ .second-section-header .text2
+ {
+    display: none;
+ }
+ .second-section-header h5
+ {
+    font-family: 'Plus Jakarta Sans';
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(79, 68, 66, 1);
+    line-height: 16px;
+    letter-spacing: 1.2px;
+}
+.second-section-header h2{
+    color: rgba(14, 4, 2, 1);
+    font-family: 'Playfair';
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+}
+.second-section-cards
+{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+.card1, .card2, .card3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 8px;
+    background-color: rgba(255, 248, 243, 1);
+    width: 100%;
+    max-width: 30%;
+    height: 100%;
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+    overflow: hidden;
+    position: relative;
+}
+/* .card1:hover , .card-img img,
+.card2:hover , .card-img img,
+.card3:hover , .card-img img{
+    transform: scale(1.05);
+} */
+.overlay-badge{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background-color: rgba(255, 248, 243, 0.9);
+    border-radius: 12px;
+    color:rgba(132, 83, 38, 1);
+    border: 1px solid rgba(211, 195, 192, 0.3);
+    padding: 4px 12px;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 12px;
+    font-weight: 600;
+}
+.mobile-badge
+{
+display: none;
+}
+@keyframes cardsMove{
+    from {
+        opacity:0;
+        transform:translateY(18px);
+    }
+    to {
+        opacity:1;
+        transform:translateY(0)
+    }
+}
+.card1, .card2, .card3{
+    animation:cardsMove 0.8s ease both;
+}
+.card2 {
+    animation-delay:0.3s ;
+}
+.card3 {
+    animation-delay:0.45s ;
+}
+.price{
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    background-color: rgba(43, 27, 23, 1);
+    border-radius: 4px;
+    color:rgba(255, 248, 243, 1);
+    padding: 4px 12px;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 14px;
+    font-weight: 600; 
+}
+.price:hover{
+    transform:scale(1.2);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+ }
+.card-img img{
+    display: block;
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+    object-fit: cover;
+}
+.card-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    padding: 24px;
+    width: 100%;
+    flex-grow: 1;
+}
+.card-details h4{
+    font-family: 'Playfair';
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(14, 4, 2, 1);
+}
+.card-details p{
+    font-family: 'Plus Jakarta Sans';
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(79, 68, 66, 1);
+    line-height: 22px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing:border-box;
+ }
+.roast-level
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+.roast-level h6 ,.roast-level h5{
+    font-family: 'Plus Jakarta Sans';
+    font-size: 12px;
+    font-weight: 600;
+ }
+.roast-level h6{
+    color:rgba(79, 68, 66, 1);
+}
+.roast-level h5{
+    color:rgba(132, 83, 38, 1);
+}
+.progress-container {
+  width: 100%;        
+  height: 6px;            
+  background-color: rgba(240, 231, 221, 1);   
+  border-radius: 4px;           
+  overflow: hidden;    
+}      
+.card1 .progress-bar, .card2 .progress-bar, .card3 .progress-bar{
+  height: 100%;
+  background-color: rgba(132, 83, 38, 1);    
+  border-radius: 4px;
+}
+.card1 .progress-bar {
+  width: 70%;                   
+}
+.card2 .progress-bar{
+  width: 55%;                   
+}
+.card3 .progress-bar{
+  width: 90%;                   
+}
+.order-button
+{
+    width: 100%;
+    border-radius: 4px;
+    background-color: rgba(240, 231, 221, 1);
+    padding: 10px 16px;
+    color:rgba(14, 4, 2, 1);
+    border:1px solid rgba(240, 231, 221, 1);
+    margin-top:8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+}
+.order-button img{
+    transition: transform 0.25s ease;
+}
+.order-button:hover{
+    background-color: rgba(132, 83, 38, 1);
+    color: rgba(240, 231, 221, 1);
+    cursor: pointer;
+}
+.order-button:hover img{
+    filter: brightness(0) invert(1);
+    transform: translateX(6px);
+}
+ 
+.third-section
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 112px 10px;
+    gap: 64px;
+}
+.third-section-left{
+    align-items: center;
+    display: flex;
+}
+.third-section-left .img-container {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 9px;
+    border: 1px solid rgba(211, 195, 192, 0.4);
+    border-radius: 8px;
+    box-shadow: 
+    0px 4px 6px -4px rgba(0, 0, 0, 0.1),
+    0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    position: relative;
+ 
+}
+.sticker{
+    position: absolute;
+    background-color: rgba(43, 27, 23, 1);
+    border: 1px solid rgba(132, 83, 38, 0.3);
+    border-radius: 8px;
+    padding: 16px 24px;
+    bottom: -20px;
+    right: -20px;
+    z-index: 20;
+ }
+ .sticker-for-mobile
+ {
+    display: none;
+ }
+.sticker h4{
+    color: rgba(255, 220, 194, 1);
+    font-family: 'playfair';
+    font-weight: 600;
+    font-size:28px;
+}
+.sticker h6{
+    font-family: 'Plus Jakarta Sans';
+    color: rgba(211, 195, 192, 1);
+
+}
+.third-section-left .img-container img{
+    border-radius: 8px;
+}
+.third-section-right{
+    width: 100%;
+    gap: 24px;
+}
+.tagline
+{
+    background-color: rgba(246, 236, 226, 1);
+    color: rgba(132, 83, 38, 1);
+    border-radius: 12px;
+    padding: 6px 14px;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 12px;
+    font-weight: 600;
+    width: fit-content;
+    border:1px solid rgba(211, 195, 192, 0.5);
+ }
+ .our-philosophy
+ {
+    display: none;
+ }
+ .third-section-right h2{
+    font-family: 'playfair';
+    font-size: 40px;
+    font-weight: 600;
+    color: rgba(14, 4, 2, 1);
+    line-height: 50px;
+    margin-top: 20px;
+ }
+ .third-section-mobile-p,.third-section-laptop-p{
+    padding-top: 24px;
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 400;
+    font-size:16px;
+    color: rgba(79, 68, 66, 1);
+    width: 100%;
+ }
+ .third-section-mobile-p{
+    display: none;
+ }
+ .features
+ {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    gap: 16px;
+ }
+ .feature,.feature-for-mobile
+ {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 16px;
+ }
+.feature-for-mobile
+{
+    display: none;
+
+ }
+.feature-img
+{
+    background-color: rgba(246, 236, 226, 1);
+    border-radius: 4px;
+    padding: 20px;
+    border: 1px solid rgba(211, 195, 192, 0.3);
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+}
+ 
+.feature .feature-details h5, .feature-for-mobile .feature-details h5{
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 600;
+    font-size:14px;
+}
+.feature .feature-details p , .feature-for-mobile .feature-details p{
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 400;
+    font-size:14px;
+    padding-top: 5px;
+}
+.discover-button 
+{
+    margin-top: 40px;
+}
+.discover-button button{
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding:12px 28px;
+    background-color: rgba(43, 27, 23, 1);
+    color: rgba(255, 248, 243, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.discover-button button img{
+    transition: transform 0.7s ease, filter 0.7s ease ;
+}
+.discover-button button:hover{
+    background-color: rgba(255, 248, 243, 1);
+    color: rgba(43, 27, 23, 1);
+    border: 2px solid rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+.discover-button button:hover img{
+    filter: brightness(0);
+    transform: translateX(6px);
+}
+
+.fourth-section-background{
+    background-color: rgba(43, 27, 23, 1);
+    border: 1px solid rgba(132, 83, 38, 0.2);
+    border-radius: 16px;
+    padding: 64px 207px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+ }
+.fouth-section-badge,.fouth-section-mobileBadge
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 6px 16px;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(132, 83, 38, 0.3);
+    background-color: rgba(255, 248, 243, 0.1);
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 600;
+    font-size:12px;
+    gap: 8px;
+    width: fit-content;
+ }
+ .fouth-section-mobileBadge
+ {
+    display: none;
+ }
+.fouth-section-badge span, .fouth-section-mobileBadge span{
+    color: rgba(255, 220, 194, 1);
+}
+.fourth-section-background h2
+{
+    font-family: 'Playfair';
+    font-weight: 600;
+    font-size:64px;
+    color: rgba(255, 248, 243, 1);
+    text-align: center;
+}
+.fourth-section-background p{
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 400;
+    font-size:18px;
+    color: rgba(211, 195, 192, 1);
+    line-height: 29px;
+}
+.fourth-section-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.code
+{
+    color: rgba(255, 220, 194, 1);
+    border: 1px dashed rgba(132, 83, 38, 1);
+    background-color: rgba(255, 248, 243, 0.05);
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 700;
+    font-size:14px;
+    padding: 12px 24px;
+    border-radius: 4px;
+}
+.code:hover
+{
+    border: 1px solid rgba(132, 83, 38, 1);
+    cursor: pointer;
+
+}
+.offer{
+    background-color: rgba(132, 83, 38, 1);
+    color: rgba(255, 248, 243, 1);
+    border-radius: 4px;
+    padding: 12px 32px;
+    border: 1px solid rgba(132, 83, 38, 1);
+    font-family: 'Plus Jakarta Sans';
+
+}
+.offer:hover{
+    background-color:rgba(255, 248, 243, 1) ;
+    color: rgba(132, 83, 38, 1);
+    cursor: pointer;
+    font-weight: 800;
+}
+.visit-out-bar
+{
+    display: none;
+    width: 100%;
+    background-color: rgba(252, 242, 232, 1);
+    border: 1px solid rgba(211, 195, 192, 0.3);
+    padding: 24px 16px;
+    gap: 12px;
+}
+.visit-out-bar h2{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'playfair';
+
+}
+.visit-out-bar div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 4px;
+}
+.visit-out-bar div h5{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(79, 68, 66, 1);
+    font-family: 'Plus Jakarta Sans';
+}
+.footer
+{
+    background-color: rgba(43, 27, 23, 1);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 86px;
+    justify-content: center;
+    align-items: center;
+ }
+ .footer-part1
+ {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 48px 0 20px 0;
+    border-bottom: 1px solid rgba(129, 116, 113, 0.2);
+    gap: 55px;
+ }
+.brand-icon-container
+{
+ background-color: rgba(132, 83, 38, 1);
+ border-radius: 2px;
+ width: 28px;
+ height: 28px;
+ align-items: center;
+ justify-content: center;
+ display: flex;
+}
+.footer-brand
+{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 30%;
+}
+.brandName{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: rgba(255, 248, 243, 1);
+    font-family: 'Playfair';
+    font-weight: 600;
+    font-size:  28px;
+}
+.footer-brand p{
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 400;
+    font-size:  14px;
+    color: rgba(211, 195, 192, 1);
+}
+ .social-media , .social-media-for-mobile{
+    display: flex;
+    gap: 12px;
+ }
+ .social-media button, .social-media-for-mobile button{
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 248, 243, 0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 248, 243, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .social-media-for-mobile{
+    display: none;
+ }
+ @keyframes socialPop{
+    from{
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+ }
+ .social-media button{
+    opacity: 0;
+    animation: socialPop 2s ease-in-out forwards;
+ }
+ .social-media button:nth-child(2){
+    animation-delay: 0.5s;
+ }
+ .social-media button:nth-child(3){
+    animation-delay: 1s;
+ }
+ .social-media button:nth-child(4){
+    animation-delay: 1.5s;
+ }
+.links{
+    display: flex;
+    flex-direction: column;
+    width: 12%;
+    gap: 12px;
+}
+.openning-hours
+{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    gap: 12px;
+}
+.coffee-dispatch{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+.links h5,.openning-hours h5,.coffee-dispatch h5{
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 600;
+    font-size:  14px;
+    color: rgba(255, 248, 243, 1);
+}
+.links a{
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 400;
+    font-size:  14px; 
+    color: rgba(211, 195, 192, 1); 
+}
+.links a:hover{
+    font-size: 16px;
+}
+.openning-hours div h6{
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 500;
+    font-size:  14px; 
+    color: rgba(255, 248, 243, 1); 
+}
+.openning-hours div span{
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 400;
+    font-size:  14px; 
+    color: rgba(211, 195, 192, 1);
+}
+.barista-status{
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 600;
+    font-size:  12px; 
+    color: rgba(255, 220, 194, 1);
+    align-items: center;
+    gap: 8px;
+    display: inline-flex;
+}
+.barista-status::before{
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgba(255, 220, 194, 1);
+    flex-shrink: 0;
+}
+.text{
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 400;
+    font-size:  14px; 
+    color: rgba(211, 195, 192, 1);
+}
+.dispatch-form
+{
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    margin: 12px 0 8px;
+}
+.dispatch-form input
+{
+    flex: 1;
+    padding: 12px 14px;
+    border: 1px solid rgba(129, 116, 113, 0.3);
+    background-color: rgba(255, 248, 243, 0.1);
+    color: rgba(211, 195, 192, 1);
+    border-right:0 ;
+    border-radius: 4px 0 0 4px;
+    font-size: 14px;
+    width: 180px;
+}
+.dispatch-form input:focus{
+    border-color: rgba(212,134,62,0.7);
+}
+.dispatch-form button {
+  padding: 12px 18px;
+  background-color: rgba(132, 83, 38, 1);
+  border: none;
+  border-radius: 0 4px 4px 0;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.25s ease;
+  color: rgba(211, 195, 192, 1);
+  font-family: 'Plus Jakarta Sans';
+}
+.dispatch-form button:hover {
+  background-color: rgba(226, 149, 76, 1);
+}
+.coffee-dispatch span{
+  color: rgba(211, 195, 192, 0.8);
+  font-weight: 600;
+  font-size: 12px;
+  font-family: 'Plus Jakarta Sans';
+}
+ .footer-part2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 32px 0 48px 0;
+
+ }
+ .footer-part2 p
+ {
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Plus Jakarta Sans';
+    color: rgba(211, 195, 192, 1);
+ }
+ .footer-part2 div
+ {
+    display: flex;
+    gap: 24px;
+ }
+ .footer-part2-links a{
+    font-weight: 600;
+    font-size: 12px;
+    font-family: 'Plus Jakarta Sans';
+    color: rgba(211, 195, 192, 1);
+ }
+ .footer-part2-links a:hover{
+    font-size: 14px;
+ }
+ .footer-part2 a:not(:last-child)::after{
+    content:"\2022";
+    color: rgba(129, 116, 113, 0.4);
+    margin-left: 24px;
+ }
+
+
+ @media(max-width:460px){
+.header .menu-toggle
+{
+    display: block;
+}
+.header{
+    position: relative;
+}
+.header .list{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #F6ECE2;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    z-index: 10000;
+}
+.menu-checkbox:checked .list{
+    display: block;
+}
+.header .list ul{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.visit-button button{
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+.first-section{
+    flex-wrap: wrap;
+    padding:40px 20px;
+
+}
+.left-side{
+    width: 100%;
+}
+.left-side-links{
+    display: flex;
+    flex-direction: column;
+}
+.background-layer
+{
+    display: none;
+}
+.right-side{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+.coffee-cup
+{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 265px;
+    border-radius: 16px;
+    left: 0;
+}
+.coffee-cup img{
+    display: block;
+    width: 350px;
+    height: 265px;
+    object-fit: cover;
+    transform: scale(1.1);
+    transform-origin: center;
+}
+.coffee-cup::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+    rgba(43, 27, 23, 0.4) 0%,
+    rgba(43, 27, 23, 0)50%,
+    rgba(43, 27, 23, 0)100%);
+    pointer-events: none;
+}
+.mini-badge{
+    display: none;
+}
+.first-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+.left-side {
+    display: contents;
+}
+.left-side h1 {
+    font-size: 40px;
+}
+  .badge,
+  .left-side > h1,
+  .left-side > p,
+  .left-side-links {
+    order: 1;
+  }
+
+.right-side {
+    order: 2;
+  }
+
+.stats-bar {
+    order: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 16px;
+    background-color: rgba(252, 242, 232, 1);
+    padding: 12px 8px;
+    border-radius: 8px;
+    justify-content: center;
+    border: 1px solid rgba(211, 195, 192, 0.3);
+}
+.stats-bar h2{
+    font-size: 20px;
+}
+.stats-bar p{
+    font-size: 11px;
+    font-weight: 500;
+}
+.stats-bar p span{
+    display: none;
+}
+.stats-bar .first, .stats-bar .second, .stats-bar .third{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.left-side-links{
+    width: 100%;
+
+}
+.menu-button{
+    width: 100%;
+}
+.story-button
+{
+    width: 100%;
+}
+.divider {
+    display: none;
+}
+.big-screen-paragraph{
+    display: none;
+}
+.left-side .small-screen-paragraph{
+    display: flex;
+    font-size: 14px;
+    line-height: 22.4px;
+}
+.second-section{
+    padding: 32px 16px;
+    width: 100%;
+    gap: 16px; 
+    border-top: 1px solid rgba(211, 195, 192, 0.2);   
+}  
+.second-section-header{
+    align-items: flex-start;
+  }
+.second-section-header .title-for-big-screen
+{
+    display: none;
+}
+ .second-section-header .title-for-small-screen
+{
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+}
+.second-section-header .text1{
+    display: none;
+}
+.second-section-header .text2
+{
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(79, 68, 66, 1);
+}
+.second-section-cards{
+    flex-direction: column;
+}
+.second-section-cards .card1, .second-section-cards .card2, .second-section-cards .card3{
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(211, 195, 192, 0.4);
+    padding: 13px 13px;
+    gap: 12px;
+}
+.card-img{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+}
+.card-img img{
+    object-fit: fill;
+    width:100%;
+    height: 330px;
+    border-radius: 4px;
+    display: block;
+    object-fit: cover;
+}
+.overlay-badge
+{
+    display: none;
+}
+.card-details
+{
+    padding:0 ;
+    padding-bottom: 4px;
+    width: 94%;
+}
+.progress-container, .roast-level{
+    display: none;
+}
+.order-button{
+    background-color: rgba(43, 27, 23, 1);
+    color: rgba(255, 248, 243, 1);
+    font-size: 12px;
+    font-weight:400;
+    border-radius: 4px;
+    padding: 10px 16px;
+}
+.order-button::before{
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url("../imgs/bagIcon.svg")no-repeat center / contain;
+}
+.order-button img{
+    display: none;
+}
+.price{
+    top: 16px;
+    bottom: auto;
+    right: 30px;
+    border-radius: 12px;
+    padding: 2px 10px;
+    border: 1px solid rgba(211, 195, 192, 0.3);
+    background-color: rgba(255, 248, 243, 0.9);
+    color: rgba(14, 4, 2, 1);
+    font-size: 14px;
+    font-family: 'playfair';
+}
+.card-details{
+    position: relative;
+}
+.mobile-badge{
+    position: absolute;
+    display: block;
+    top:1px;
+    right: 1px;
+    background-color: rgba(246, 236, 226, 1);
+    color: rgba(132, 83, 38, 1);
+    font-size: 12px;
+    font-family: 'Plus Jakarta Sans';
+    border-radius: 2px;
+    padding:2px 8px;
+}
+.sticker{
+    display: none;
+}
+.sticker-for-mobile{
+    display: block;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    background-color: rgba(43, 27, 23, 0.9);
+    border-radius: 12px;
+    padding: 4px 10px;
+}
+.sticker-for-mobile h4{
+    color: rgba(255, 248, 243, 1);
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Plus Jakarta Sans';
+}
+.third-section-left .img-container{
+    padding: 0;
+    box-shadow: none;
+}
+.img-container{
+    position: relative;
+    width: 100%;
+
+}
+.img-container img{
+    object-fit: cover;
+    width: 100%;
+    height: 270px;
+}
+.tagline
+{
+    display: none;
+}
+.third-section{
+    flex-direction: column;
+    width: 100%;
+    padding: 24px 6px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+}
+.our-philosophy
+{
+    display: block;
+    color: rgba(132, 83, 38, 1);
+    font-weight: 600;
+    font-size: 12px;
+    font-family: 'Plus Jakarta Sans';
+}
+.third-section h2{
+    font-size: 28px;
+    margin-top: 0;
+}
+.third-section-laptop-p
+{
+    display: none;
+}
+.third-section-mobile-p
+{
+    display: block;
+    padding-top: 10px;
+}
+.feature{
+    display: none;
+}
+.feature-for-mobile{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(252, 242, 232, 1);
+    border: 1px solid rgba(211, 195, 192, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+}
+.feature-for-mobile p{
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(79, 68, 66, 1);
+}
+.feature-for-mobile h5{
+    font-size: 14px;
+}
+.discover-button
+{
+    margin-top: 20px;
+}
+.discover-button button
+{
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid rgba(211, 195, 192, 0.5);
+    background-color: rgba(246, 236, 226, 1);
+    color: rgba(14, 4, 2, 1);
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Plus Jakarta Sans';
+}
+.fourth-section{
+    width: 100%;
+    padding: 24px 16px;
+}
+.fouth-section-mobileBadge
+{
+    display: block;
+    width: max-content;
+    border-radius: 12px;
+    padding: 4px 12px;
+    border: 1px solid rgba(255, 248, 243, 0.15);
+}
+.fouth-section-badge
+{
+    display: none;
+}
+.fourth-section-background
+{
+    padding: 20px;
+    text-align: center;
+    border: 1px solid rgba(129, 116, 113, 0.2);
+}
+.fourth-section-background h2{
+    font-size: 28px;
+}
+.fourth-section-background p{
+    font-size: 14px;
+    line-height: 22.4px;
+    letter-spacing: 0.14px;
+}
+.fourth-section-buttons{
+    align-items: center;
+    justify-content: center;
+}
+.offer-link{
+    width: 100%;
+}
+.offer{
+    padding: 12px 24px;
+    width: 100%;
+}
+.footer{
+    margin-top: 0;
+}
+.footer-part1{
+    width: 100%;
+    flex-direction: column;
+    border-bottom: none;
+    gap: 17px;
+}
+.footer-brand{
+    width: 100%;
+    padding-bottom: 24px;
+ }
+.footer-brand p{
+    font-size: 14px;
+}
+.brand-icon-container{
+    display: none;
+}
+.brandName h3{
+    font-size: 28px;
+}
+.links{
+    border-bottom: 1px solid rgba(129, 116, 113, 0.2);
+    border-top: 1px solid rgba(129, 116, 113, 0.2);
+    padding: 16px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 16px 0;
+}
+.links a{
+    font-weight: 600;
+    font-size: 12px;
+}
+.links h5, .openning-hours, .coffee-dispatch, .social-media, .footer-part2 .footer-part2-links{
+    display: none;
+}
+.social-media-for-mobile
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(129, 116, 113, 0.2);
+    padding-bottom: 24px;
+    align-items: center;
+}
+.social-media-for-mobile div{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+.social-media-for-mobile h5{
+    font-size: 11px;
+    font-weight: 400;
+    color: rgba(211, 195, 192, 1);
+    font-family: 'Plus Jakarta Sans';
+}
+.footer-part2{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.footer-part2 p{
+    font-size: 11px;
+} 
+.visit-out-bar{
+    display: flex;
+    flex-direction: column;
+}
+}
+
+@media (max-width:834px){
+}
+@media(min-width:834px) and (max-width:1070px){
+}

@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+@font-face{
+    font-family:'Playfair';
+    src: url(../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family:'Plus Jakarta Sans';
+    src: url(../fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf);
+}
+a{
+        text-decoration:none;
+        color:#3A3845;
+        font-family:'inter';
+}
+.container {
+   /* width:calc(100% - 330px) ; */
+    width:100%;
+    max-width:90%;
+    display:flex;
+    align-items: center;
+    gap:10px;
+    justify-content: space-between;
+    flex-wrap:wrap;
+ }
+.container2{
+    width: 100%;
+    max-width:95%;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.container3{
+    width: 100%;
+    max-width:1400px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+ }
+.container4 {
+    width:100%;
+    max-width: 90%;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+ @media(max-width:480px){
+    .container{
+        max-width: 95%;
+    }
+ }
