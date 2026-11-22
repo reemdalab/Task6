@@ -1695,6 +1695,8 @@ display: none;
   animation-delay: 0.6s;
 }
 }
+
+
 @media (max-width:834px){
   .header .menu-toggle
 {
@@ -1732,6 +1734,7 @@ display: none;
  .first-section{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
  } 
  .second-section-cards{
     display: flex;
