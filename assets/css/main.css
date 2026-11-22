@@ -234,12 +234,13 @@
     border-left:1px solid  #E0E0E0;
     padding:4.5px 16px;
     width: 33%;
-
+    
  }
  .third{
     border-left:1px solid  #E0E0E0;
     padding:4.5px 16px; 
     width: 33%;
+    
  }
  .third div{
     display: flex;
@@ -260,6 +261,7 @@
     font-size: 12px;
     font-weight: 600;
     color: rgba(79, 68, 66, 1);
+    display: flex;
  }
  @keyframes statsBarAnimation{
     from{
@@ -802,6 +804,9 @@ display: none;
     transform: translateX(6px);
 }
 
+.fourth-section{
+    width: 100%;
+}
 .fourth-section-background{
     background-color: rgba(43, 27, 23, 1);
     border: 1px solid rgba(132, 83, 38, 0.2);
@@ -1811,4 +1816,21 @@ display: none;
 }
 }
 @media(min-width:834px) and (max-width:1070px){
+    .third-section{
+        padding: 70px 10px
+    }
+    .fourth-section-background p{
+        text-align: center;
+    }
+    .dispatch-form input{
+        width: 140px;
+    }
+    .background-layer{
+        width: 90%;
+        left: 0;
+    }
+    .coffee-cup img{
+        height: 350px;
+        width: 400px;
+    }
 }
