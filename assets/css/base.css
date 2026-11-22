@@ -58,6 +58,9 @@ a{
         max-width: 95%;
     }
  }
- @media (max-width:834px){
+ @media(min-width:1400) and (max-width:1600){
+    .container3{
+        width: 1600px;
+    }
  
 }
