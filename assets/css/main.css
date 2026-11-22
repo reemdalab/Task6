@@ -1157,12 +1157,31 @@ display: none;
 
 
  @media(max-width:460px){
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 20px;
+}
+.logo img{
+    display: none;
+}    
+.logo::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(132, 83, 38, 1);
+    flex-shrink: 0;
+}
+
 .header .menu-toggle
 {
     display: block;
 }
 .header{
     position: relative;
+    padding: 14px 16px;
 }
 .header .list{
     display: none;
